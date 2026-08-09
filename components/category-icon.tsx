@@ -1,0 +1,58 @@
+import {
+  Crown,
+  Briefcase,
+  Users,
+  LayoutGrid,
+  Presentation,
+  ShieldCheck,
+  FileLock2,
+  Files,
+  Archive,
+  LockKeyhole,
+  Armchair,
+  Sofa,
+  Theater,
+  Star,
+  Mic,
+  ConciergeBell,
+  Megaphone,
+  Banknote,
+  Store,
+  Laptop,
+  RockingChair,
+  Stethoscope,
+  FlaskConical,
+  Package,
+  type LucideIcon,
+} from 'lucide-react'
+
+const map: Record<string, LucideIcon> = {
+  Crown,
+  Briefcase,
+  Users,
+  LayoutGrid,
+  Presentation,
+  ShieldCheck,
+  FileLock2,
+  Files,
+  Archive,
+  LockKeyhole,
+  Armchair,
+  Sofa,
+  Theater,
+  Star,
+  Mic,
+  ConciergeBell,
+  Megaphone,
+  Banknote,
+  Store,
+  Laptop,
+  RockingChair,
+  Stethoscope,
+  FlaskConical,
+}
+
+export function CategoryIcon({ name, className }: { name: string; className?: string }) {
+  const Icon = map[name] ?? Package
+  return <Icon className={className} aria-hidden="true" />
+}
