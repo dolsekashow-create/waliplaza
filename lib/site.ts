@@ -37,9 +37,6 @@ export const PRIMARY_EMAIL = 'info@waliplaza.com'
 /** كل عناوين البريد الإلكتروني */
 export const EMAILS = [
   'info@waliplaza.com',
-  'muhnd@waliplaza.com',
-  'loai@waliplaza.com',
-  'mohamed@waliplaza.com',
 ]
 
 /** رابط mailto لطلب عرض سعر */
